@@ -4,7 +4,9 @@
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
-
+.imgRedonda {
+    border-radius:80px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -16,14 +18,14 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: #004289;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #0b6bd3;
+  color: #007bff;
   outline: none;
   text-decoration: none;
 }
@@ -52,14 +54,14 @@ h6 {
   display: none;
   background: #007bff;
   color: #fff;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   text-align: center;
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
+  right: 21px;
+  bottom: 75px;
   transition: background 0.5s;
   z-index: 11;
 }
@@ -68,6 +70,28 @@ h6 {
   padding-top: 12px;
   color: #fff;
 }
+
+
+/*whatsapp */
+.whatsapp {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  right: 45px;
+  bottom: 42px;
+  z-index: 10;
+}
+.whatsapp img{
+max-height: 90px;
+}
+
+.fb_dialog {
+  position: -webkit-sticky !important;
+  position: fixed !important;
+  bottom: 5px !important;
+  right: 77px !important;
+  }
+
 
 /* Prelaoder */
 
@@ -95,6 +119,15 @@ h6 {
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
+#preloader img {
+  position: fixed;
+  max-height: 32px;
+  width: 32px;
+  height: 60px;
+  top: calc(50% - 15px);
+  left: calc(50% - 14px);
+}
+
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -152,14 +185,14 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #00366f;
+  color:#007BFF;
   text-decoration: none;
 }
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin: 0px 0;
+  max-height: 50px;
 }
 
 .main-pages {
@@ -191,7 +224,7 @@ h6 {
 #intro .intro-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -263,7 +296,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #004289;
+  color: #007bff;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -274,7 +307,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  color: #03a9f3 ;
   text-decoration: none;
 }
 
@@ -312,7 +345,7 @@ h6 {
 .main-nav .drop-down ul a:hover,
 .main-nav .drop-down ul .active > a,
 .main-nav .drop-down ul li:hover > a {
-  color: #007bff;
+  color: #44b8dd;
 }
 
 .main-nav .drop-down > a:after {
@@ -1186,41 +1219,18 @@ h6 {
 
 #footer {
   background: #00428a;
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background: #004a99;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 2px 0;
 }
 
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
 
-#footer .footer-top .footer-info h3 {
-  font-size: 34px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 13px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
-  color: #ecf5ff;
-}
-
-#footer .footer-top .social-links a {
+.social-links a {
   font-size: 18px;
   display: inline-block;
   background: #007bff;
@@ -1235,77 +1245,9 @@ h6 {
   transition: 0.3s;
 }
 
-#footer .footer-top .social-links a:hover {
+.social-links a:hover {
   background: #0067d5;
   color: #fff;
-}
-
-#footer .footer-top h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 8px 0;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #ecf5ff;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  color: #74b5fc;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
-}
-
-#footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-newsletter input[type="email"] {
-  border: 0;
-  padding: 6px 8px;
-  width: 65%;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #007bff;
-  border: 0;
-  width: 35%;
-  padding: 6px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #0062cc;
 }
 
 #footer .copyright {
@@ -1370,16 +1312,40 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
+svg{
+  width: 44px !important;
+  height: 44px !important;
 }
 
 @media (max-width: 767px) {
   #intro .intro-info {
     width: 100%;
   }
+  }
+  @media screen and (max-width: 800px )
+ {
+  .whatsapp
+  {
+    right: 25px;
+    bottom: 20px;
+  }
+    .whatsapp img {
+      max-height: 67px;
+    }
+      .back-to-top {
+        bottom: 54px;
+        right: 19px;
+        width: 38px;
+        height: 38px;
+      }
+      .fb_dialog {
+        position: -webkit-sticky !important;
+        position: fixed !important;
+        bottom: 0px !important;
+        right: 60px !important;
+        }
+  }
+  
 
   #intro .intro-info h2 {
     font-size: 34px;
@@ -1404,10 +1370,12 @@ h6 {
   #testimonials .testimonial-item p {
     margin-left: 0;
   }
-}
+
 
 @media (max-width: 574px) {
   #intro {
     padding: 100px 0 20px 0;
   }
 }
+
+
